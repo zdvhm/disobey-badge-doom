@@ -1,0 +1,40 @@
+# License
+
+This project combines code under multiple open-source licenses:
+
+## GPL v2 (GNU General Public License v2)
+- **prboom/** - PrBoom engine source code
+- **prboom-esp32-compat/** - ESP32 platform layer and DOOM integration (except the Apache-licensed files listed below)
+- **prboom-wad-tables/** - WAD data tables
+- **prboom_main.c**, **main/** - ESP32-S3 entry point and stubs for this port
+- All modifications and derivatives of the above
+
+Covers the original DOOM source code released by id Software under GPL v2, and all subsequent derivative works (Boom, PrBoom, etc.), as well as the badge-specific code added by this project.
+
+Full text: See `prboom/COPYING`
+
+## Apache License 2.0
+- **prboom-esp32-compat/spi_lcd.c** - SPI LCD driver (based on Espressif example code, adapted for the badge's ST7789 display)
+- **prboom-esp32-compat/psxcontroller.c** - PSX controller driver (Espressif)
+
+Copyright Espressif Systems (Shanghai) PTE LTD; see the license headers in the files.
+
+Full text: http://www.apache.org/licenses/LICENSE-2.0
+
+## Data Files
+- **data/DOOM1.WAD** - Shareware DOOM episode 1 data. Distributable in unmodified form under id Software's shareware terms; it is not open source. DOOM is a registered trademark of id Software LLC.
+
+## Summary
+
+**You are free to:**
+- Use this code for any purpose
+- Modify and distribute it
+- Run it on any hardware
+- Build commercial products with it (under GPL v2 terms)
+
+**You must:**
+- Include the original licenses and preserve copyright notices
+- Share modifications of the GPL-covered code under GPL v2
+- Provide source code access when distributing binaries
+
+For the full GPL v2 terms, see `prboom/COPYING`.
